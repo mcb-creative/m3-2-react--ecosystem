@@ -1,4 +1,4 @@
-# Workshop: Fruit store
+# 3-2 - The Fruit store
 
 In this workshop, we'll build an online fruit store, with different items being sold by different sellers.
 
@@ -44,8 +44,8 @@ For example:
 
 ```jsx
 <Switch>
-  <Route path='/'>Homepage</Route>
-  <Route path='/about'>About</Route>
+  <Route path="/">Homepage</Route>
+  <Route path="/about">About</Route>
 </Switch>
 ```
 
@@ -71,7 +71,7 @@ Create two new components, `Home` and `About` and render them for their respecti
 
 ```jsx
 <Switch>
-  <Route path='/'>
+  <Route path="/">
     <Homepage />
   </Route>
   {/* same thing for About */}
@@ -100,7 +100,7 @@ Create a new `ListingGrid` component. This component will take an array of store
 
 ```js
 const ListingGrid = ({ itemList }) => {
-  return 'Todo';
+  return "Todo";
 };
 
 ListingGrid.propTypes = {
@@ -158,7 +158,7 @@ Here are the steps we'll need to take:
 That last step relies on the `useParams` hook, from react-router-dom. We can access the `itemId` URL parameter like so:
 
 ```js
-import { useParams } from 'react-router-dom';
+import { useParams } from "react-router-dom";
 
 const ItemDetails = () => {
   const { itemId } = useParams();
